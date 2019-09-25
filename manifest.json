@@ -1,0 +1,37 @@
+{
+  "manifest_version": 2,
+  "name": "TextNow Ad Bocker",
+  "version": "1.0.0",
+  "description": "Removes all ads from TextNow",
+  "offline_enabled": true,
+  "icons": {
+    "16": "imgs/16.png",
+    "48": "imgs/48.png",
+    "128": "imgs/128.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webNavigation",
+    "tabs",
+    "<all_urls>"
+  ],
+  "page_action": {
+    "default_title": "TextNow Ad Bocker",
+    "default_icon": {
+      "19": "imgs/19.png",
+      "38": "imgs/38.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.textnow.com/messaging"
+      ],
+      "js": [
+        "js/content.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}
