@@ -1,1 +1,1 @@
-Removes ads from TextNow.com
+Google Chrome extension that removes ads from TextNow.com
