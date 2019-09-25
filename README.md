@@ -1,0 +1,1 @@
+Removes ads from TextNow.com
